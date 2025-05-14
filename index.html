@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Langauge learning web app">
+    <meta name="Keywords" content="Langauges, learn, Arabic, Spanish, Seminars" >
+    <meta name="Authors" content="Fatima Ali">
+    <title>LingoJourney</title>
+    <!--fav icon-->
+    <link rel="icon" type="image/x-icon" href="assets/Favicon.png">
+    <!--link the css file-->
+    <link rel="stylesheet" type="text/CSS" href="assets/style.css">    
+    <!--Jquery mobile links-->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!--to create the home page-->
+<section data-role="page" id="homepage">
+<!--To add the header-->
+<header data-role="header" data-position="fixed">
+<!--To add the logo-->
+<div class="logo">
+    <img src="assets/Logo.png" alt="Logo">
+</div>
+<a href="#" id="loginbutton" class="ui-btn ui-btn-right">Login</a>
+<!--To add the navigation menu/bar-->
+<nav data-role="navbar" class="main-navbar">
+    <ul>
+        <li><a href="#homepage" class="ui-btn-active" >Home</a></li>
+        <li><a href="#lingo">Lingo</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="more-toggle">More</a></li>
+    </ul> 
+</nav>
+<ul class="more-nav" style="display: none; padding: 10px;" data-role="listview" data-inset="true" data-icon="false">
+    <li><a href="#about">About</a></li>
+    <li><a href="#seminars" >Seminars</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#videos">Videos</a></li>
+</ul>
+</header>
+
+<!--to add the main section of the page-->
+<main data-role="main" class="ui-content">
+<div class="homerow">
+<!--left column (text)-->
+<div class="col">
+<h1>LET'S LEARN <br><span id="homespan">ANOTHER</span> <br>LANGUAGE</h1>
+<p>
+Explore new languages and cultures with us! Our app offers engaging lessons and real-world practice to
+help you connect confidently with others.<br> Let's start this journey together!
+</p>
+<!--button-->
+<a href="#lingo" id="homebtn" class="ui-btn ui-btn-inline">START NOW</a>
+<!--counters-->
+<div class="counter-home">
+    <div class="counter-col">
+        <h2 id="counterlang">50+</h2>
+        <p>Languages</p>
+    </div>
+    <div class="counter-col">
+        <h2 id="counterstudents">150+</h2>
+        <p>Students</p>
+    </div>
+    </div>
+    </div>
+<!--right Column (image)-->
+<div class="col">
+    <img src="assets/Homeimage.png" alt="homeimg" />
+</div>
+</div>
+</main>
+
+<!--To add the footer-->
+<footer data-role="footer" class="footerstyle">
+    <!--to add the logo-->
+    <a href="#homepage" class="ui-btn footerbtn"><img class="footerlogo" src="assets/Logo.png"></a>
+    <p>&copy; all rights reserved to LingoJourney</p>
+</footer>
+</section>
+
+
+<!--To create the languages page-->
+<section data-role="page" id="lingo">
+<!--subscribe anel-->
+<div data-role="panel" id="subscribepanel"  data-dismissible="false" data-display="overlay" data-position="right">
+    <a href="#lingo" data-rel="close" class="close-btn ui-btn ui-btn-b ui-btn-inline ui-icon-delete ui-btn-icon-notext ui-nodisc-icon ui-btn-right">close panel</a>
+    <h3 id="subscribepanel-heading">THANK YOU! <br> FOR LEARNING WITH US</h3>
+    <br>
+    <img src="assets/Favicon.png" alt="logo" width="250px"/>
+</div>
+<header data-role="header" data-position="fixed">
+<!--To add the logo-->
+<div class="logo">
+    <img src="assets/Logo.png" alt="Logo">
+</div>
+<a href="#" id="loginbutton" class="ui-btn ui-btn-right">Login</a>
+<!--To add the navigation menu/bar-->
+<nav data-role="navbar" class="main-navbar">
+    <ul>
+        <li><a href="#homepage" >Home</a></li>
+        <li><a href="#lingo" class="ui-btn-active">Lingo</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="more-toggle">More</a></li>
+    </ul> 
+</nav>
+<ul class="more-nav" style="display: none; padding: 10px;" data-role="listview" data-inset="true" data-icon="false">
+    <li><a href="#about">About</a></li>
+    <li><a href="#seminars" >Seminars</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#videos">Videos</a></li>
+</ul>
+</header>
+
+    <main data-role="main" class="ui-content">
+    <h1 class="headingsh1">EXPLORE AVAILABLE LANGUAGES</h1>
+    <p class="paragraphs">Explore our wide variety of languages and start your personalized journey to fluency.</p>
+    <div class="container">
+        <div class="rowlingo">
+        <!--row 1-->
+        <!--language 1-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/uk.png" alt="UK" class="lingoimg">
+        <h4>English</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        <!--language 2-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/brazil.png" alt="Brazil" class="lingoimg">
+        <h4>Brazilian</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        <!--language 3-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/uae.png" alt="UAE" class="lingoimg">
+        <h4>Arabic</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        <!--language 4-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/china.png" alt="China" class="lingoimg">
+        <h4>Mandarin</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        </div>  
+
+        <!--row 2-->
+        <div class="rowlingo">
+        <!--language 5-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/turkey.png" alt="Turkey" class="lingoimg">
+        <h4>Turkish</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        <!--language 6-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/spain.png" alt="Spain" class="lingoimg">
+        <h4>Spanish</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        <!--language 7-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/sweden.png" alt="Sweden" class="lingoimg">
+        <h4>Swedish</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        <!--language 8-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/germany.png" alt="Germany" class="lingoimg">
+        <h4>German</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        </div>  
+
+        <!--row 3-->
+        <div class="rowlingo">
+        <!--language 9-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/france.png" alt="France" class="lingoimg">
+        <h4>French</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        <!--language 10-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/india.png" alt="india" class="lingoimg">
+        <h4>Hindi</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        <!--language 11-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/southkorea.png" alt="Southkorea" class="lingoimg">
+        <h4>Korean</h4>
+        <a href="#subscribepanel" class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        <!--language 12-->
+        <div class="lingo">
+        <!--to add language image-->
+        <img src="assets/portugual.png" alt="Portugal" class="lingoimg">
+        <h4>Portuguese</h4>
+        <a href="##subscribepanel"  class="ui-btn ui-btn-inline lingobtn">Subscribe</a>   
+        </div>
+        </div>
+    </div>
+    </main>
+
+    <footer data-role="footer" class="footerstyle">
+        <!--to add the logo-->
+        <a href="#homepage" class="ui-btn footerbtn"><img class="footerlogo" src="assets/Logo.png"></a>
+        <p>&copy; all rights reserved to LingoJourney</p>
+    </footer>
+</section>
+
+<!--To create the seminars page-->
+<section data-role="page" id="seminars">
+<!--To add the header-->
+<header data-role="header" data-position="fixed">
+    <!--To add the logo-->
+    <div class="logo">
+        <img src="assets/Logo.png" alt="Logo">
+    </div>
+    <a href="#" id="loginbutton" class="ui-btn ui-btn-right">Login</a>
+    <!--To add the navigation menu/bar-->
+    <nav data-role="navbar" class="main-navbar">
+        <ul>
+            <li><a href="#homepage" >Home</a></li>
+            <li><a href="#lingo">Lingo</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="more-toggle">More</a></li>
+        </ul> 
+    </nav>
+    <ul class="more-nav" style="display: none; padding: 10px;" data-role="listview" data-inset="true" data-icon="false">
+        <li><a href="#about">About</a></li>
+        <li><a href="#seminars" class="ui-btn-active">Seminars</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#videos">Videos</a></li>
+    </ul>
+</header>
+
+    <main data-role="main" class="ui-content">
+    <h1 class="headingsh1">REGISTER FOR OUR <br> NEXT SEMINAR</h1>
+    <div class="seminarcontainer">
+        <!--seminar one-->
+        <div class="seminarcard" id="seminarsavailable">
+          <img src="assets/seminar1.jpg" alt="Event" class="seminarimg">
+          <div class="seminarinfo">
+            <h3>Spanish Language Seminar</h3>
+            <p>Interactive session led by expert tutors covering basic conversational Spanish.</p>
+            <span>Time: 10:00 AM<br>Location: Barcelona Cultural<br>Center<br>Date: May 10</span>
+            <a class="ui-btn" id="seminarbtn1" onclick="registerSeminar()">Register</a>
+          </div>
+        </div>
+        <!--seminar 2-->
+        <div class="seminarcard">
+          <img src="assets/seminar2.jpg" alt="Event" class="seminarimg">
+          <div class="seminarinfo">
+            <h3>Mandarin Fluency Workshop</h3>
+            <p>Practice Mandarin listening and speaking skills through guided roleplays.</p>
+            <span>Time: 9:30 AM<br>Location: Chongqing Language Institute<br>Date: May 20</span>
+            <a class="ui-btn" id="seminarbtn2" onclick="registerSeminar()">Register</a>
+          </div>
+        </div>
+        <!--seminar 3-->
+        <div class="seminarcard">
+          <img src="assets/seminar3.jpg" alt="Event" class="seminarimg">
+          <div class="seminarinfo">
+            <h3>Arabic Essentials Session</h3>
+            <p>Explore Arabic basics including greetings, numbers, and cultural tips.</p>
+            <span>Time: 2:00 PM<br>Location: Dubai Learning Hub<br>Date: June 1</span>
+            <a class="ui-btn" id="seminarbtn3" onclick="registerSeminar()">Register</a>
+          </div>
+        </div>
+    </div>
+
+    <h1 class="headingsh1">UPCOMING SEMINARS</h1>
+    <!--to add a search function-->
+    <form class="ui-filterable">
+        <input id="eventfilter" data-type="search" placeholder="Search for your city">
+    </form>
+    <!--filterable items-->
+    <ul data-role="listview" data-filter="true" data-input="#eventfilter" data-autodividers="true" data-inset="true">
+        <li><a href="#contact"><img src="assets/spain.png" alt="Spain" class="ui-li-icon"><span class="seminarcity">Barcelona</span><br>Spanish Language Seminar<br><span>Time: May 10, 10:00 AM<br>Location: Barcelona Cultural Center</span> <span class="ui-li-count counter-register">20+</span> </a></li>
+        <li><a href="#contact"><img src="assets/china.png" alt="China" class="ui-li-icon"><span class="seminarcity">Chongqing</span><br>Mandarin Fluency Workshop<br><span>Time: May 20, 9:30 AM<br>Location: Chongqing Language Institute</span> <span class="ui-li-count counter-register">15+</span> </a></li>
+        <li><a href="#contact"><img src="assets/uae.png" alt="UAE" class="ui-li-icon"><span class="seminarcity">Dubai</span><br>Arabic Essentials Session<br><span>Time:  June 1, 2:00 PM<br>Location: Dubai Learning Hub</span> <span class="ui-li-count counter-register">30+</span> </a></li>
+        <li><a><img src="assets/uk.png" alt="UK" class="ui-li-icon"><span class="seminarcity">London</span><br>British English Grammar Boost<br><span>Time:  May 15, 11:00 AM<br>Location: London Language Hall</span></a></li>
+        <li><a><img src="assets/sweden.png" alt="Sweden" class="ui-li-icon"><span class="seminarcity">Malmo</span><br>Swedish Pronunciation Training<br><span>Time: May 18, 4:00 PM<br>Location: Malmo Learning Center</span></a></li>
+        <li><a><img src="assets/france.png" alt="France" class="ui-li-icon"><span class="seminarcity">Paris</span><br>French Conversation Practice<br><span>Time: May 12, 3:00 PM<br>Location: Paris Language Academy</span></a></li>
+        <li><a><img src="assets/southkorea.png" alt="South Korea" class="ui-li-icon"><span class="seminarcity">Seoul</span><br>Korean Culture & Language Day<br><span>Time:  May 25, 1:00 PM<br>Location: Seoul Global Center</span></a></li>
+        <li><a><img src="assets/brazil.png" alt="Brazil" class="ui-li-icon"><span class="seminarcity">Sao Paulo</span><br>Portuguese Basics Crash Course<br><span>Time:  June 6, 10:30 AM<br>Location: Sao Paulo Learning Space</span></a></li>
+    </ul>
+    </main>
+    
+    <footer data-role="footer" class="footerstyle">
+        <!--to add the logo-->
+        <a href="#homepage" c class="ui-btn footerbtn"><img class="footerlogo" src="assets/Logo.png"></a>
+        <p>&copy; all rights reserved to LingoJourney</p>
+    </footer>
+</section> 
+
+
+<!--To create the programs page-->
+<section data-role="page" id="programs">
+    <header data-role="header" data-position="fixed">
+    <!--To add the logo-->
+    <div class="logo">
+        <img src="assets/Logo.png" alt="Logo">
+    </div>
+    <a href="#" id="loginbutton" class="ui-btn ui-btn-right">Login</a>
+    <!--To add the navigation menu/bar-->
+    <nav data-role="navbar" class="main-navbar">
+        <ul>
+            <li><a href="#homepage" >Home</a></li>
+            <li><a href="#lingo">Lingo</a></li>
+            <li><a href="#programs"class="ui-btn-active">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="more-toggle">More</a></li>
+        </ul> 
+    </nav>
+    <ul class="more-nav" style="display: none; padding: 10px;" data-role="listview" data-inset="true" data-icon="false">
+        <li><a href="#about">About</a></li>
+        <li><a href="#seminars" >Seminars</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#videos">Videos</a></li>
+    </ul>
+    </header>
+    <main data-role="main" class="ui-content">
+    <!--to add a grid with the programs available-->
+    <h1 class="headingsh1">OUR PROGRAMS</h1>
+    <div class="ui-grid-b ui-responsive">
+        <!--grid 1-->
+        <div class="ui-block-a" id="program1">
+            <h3>BEGINNER ESSENTIALLS</h3>
+            <p>Start your journey with basic vocabulary, pronunciation, and grammar fundamentals.</p>
+            <a href="#subscriptionsh1" class="ui-btn ui-btn-inline" data-ajax="false">Join now</a>
+        </div>
+        <!--grid 2-->
+        <div class="ui-block-b" id="program2">
+                <h3>CONVERSATIONAL MASTERY</h3>
+                <p>Improve your speaking and listening skills with real-world conversations and audio lessons.</p>
+                <a href="#subscriptionsh1" class="ui-btn ui-btn-inline" data-ajax="false">Join now</a>
+        </div>
+        <!--grid 3-->
+        <div class="ui-block-c" id="program3">
+                <h3>SPECIAL ADVANCED FLUENCY</h3>
+                <p>Master complex grammar, professional vocabulary, and advanced speaking skills for full fluency.</p>
+                <a href="#subscriptionsh1" class="ui-btn ui-btn-inline" data-ajax="false">Join now</a>
+        </div>
+    </div>
+    <br>
+    <!--to add a grid with Subscriptions plans-->
+    <h1 class="headingsh1">SUBSCRIPTION PLANS</h1>
+    <div class="ui-grid-b ui-responsive" id="subscriptionsh1">
+        <!--grid 1-->
+        <div class="ui-block-a">
+            <h3>BASIC</h3>
+            <p>Great for casual learners starting out.</p>
+            <h3 class="priceh3">$50/MONTH</h3>
+            <ul>
+                <li>Access to 1 language</li>
+                <li>Basic quizzes</li>
+                <li>Email support</li>
+            </ul>
+            <a href="#contact" class="ui-btn">Get started</a>
+        </div>
+        <!--grid 2-->
+        <div class="ui-block-b" id="middleblock">
+            <h3>PLUS</h3>
+            <p>Ideal for learners looking to practice more.</p>
+            <h3 class="priceh3middle">$100/MONTH</h3>
+            <ul>
+                <li>Access to 3 languages</li>
+                <li>Live practice</li>
+                <li>Progress tracking</li>
+            </ul>
+            <a href="#contact" class="ui-btn">Get started</a>
+        </div>
+        <!--grid 3-->
+        <div class="ui-block-c">
+            <h3>PREMIUM</h3>
+            <p>Best for serious learners aiming for fluency.</p>
+            <h3 class="priceh3">$160/MONTH</h3>
+            <ul>
+                <li>All languages unlocked</li>
+                <li>1-on-1 coaching</li>
+                <li>Certificate of completion</li>
+            </ul>        
+            <a href="#contact" class="ui-btn">Get started</a>
+        </div>
+    </div>
+    </main>
+
+    <footer data-role="footer" class="footerstyle">
+        <!--to add the logo-->
+        <a href="#homepage" class="ui-btn footerbtn"><img class="footerlogo" src="assets/Logo.png"></a>
+        <p>&copy; all rights reserved to LingoJourney</p>
+    </footer>
+</section>
+
+<!--To create the reviews page-->
+<section data-role="page" id="reviews">
+<header data-role="header" data-position="fixed">
+    <!--To add the logo-->
+    <div class="logo">
+        <img src="assets/Logo.png" alt="Logo">
+    </div>
+    <a href="#" id="loginbutton" class="ui-btn ui-btn-right">Login</a>
+    <!--To add the navigation menu/bar-->
+    <nav data-role="navbar" class="main-navbar">
+        <ul>
+            <li><a href="#homepage" >Home</a></li>
+            <li><a href="#lingo">Lingo</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="more-toggle">More</a></li>
+        </ul> 
+    </nav>
+    <ul class="more-nav" style="display: none; padding: 10px;" data-role="listview" data-inset="true" data-icon="false">
+        <li><a href="#about">About</a></li>
+        <li><a href="#seminars" >Seminars</a></li>
+        <li><a href="#reviews" class="ui-btn-active">Reviews</a></li>
+        <li><a href="#videos">Videos</a></li>
+    </ul>
+</header>
+<main data-role="main" class="ui-content" id="reviewbody">
+<h1 class="headingsh1">TESTIMONIALS</h1>
+<p class="paragraphs">Discover what our users have to say about their learning journey
+</p>
+<br>
+<div class="reviewscontainer">
+    <p class="arrowbtns" id="left">&#10094;</p>
+    <ul class="carousel">
+        <li class="review">
+            <div class="reviewimg">
+                <img src="assets/review1.jpg" alt="review" draggable="false">
+                <h2>Chase Atlantic - Working Professional</h2>
+                <span>As someone juggling a full-time job and evening classes, I needed something I could use on the go. This app fits perfectly into my routine. 
+                The bite-sized lessons and responsive design are game changers.</span>
+            </div>
+        </li>
+        <li class="review">
+            <div class="reviewimg">
+                <img src="assets/review2.jpg" alt="review" draggable="false">
+                <h2>Sombr - Student</h2>
+                <span>I've tried several apps to brush up on my language skills, but this one truly stands out. It's 
+                clean, interactive, and feels personal. I love how easy it is to navigate even on my phone!</span>
+            </div>
+        </li>
+        <li class="review">
+            <div class="reviewimg">
+                <img src="assets/review3.jpg" alt="review" draggable="false">
+                <h2>Joe Blair - Student</h2>
+                <span>I really enjoy how the app mixes quizzes, audio, and visuals to make learning fun.
+                 Sometimes the loading time is a bit slow, but overall it's an excellent experience!</span>
+            </div>
+        </li>
+        <li class="review">
+            <div class="reviewimg">
+                <img src="assets/review4.jpg" alt="review" draggable="false">
+                <h2>Erika - Language Enthusiast</h2>
+                <span>Whether I'm reviewing vocabulary or checking grammar tips, this site has everything I need.
+                 I especially appreciate the mobile-friendly layout it looks great on all my devices.</span>
+            </div>
+        </li>
+        <li class="review">
+            <div class="reviewimg">
+                <img src="assets/review5.jpg" alt="review" draggable="false">
+                <h2>Tory Lanez - University student</h2>
+                <span>What impressed me most is how the content is structured for beginners and advanced users alike. 
+                Plus, the interface is intuitive. I recommend it to my classmates all the time!</span>
+            </div>
+        </li>
+    </ul>
+    <p class="arrowbtns" id="right">&#10095;</p>
+</div>
+</main>
+
+<footer data-role="footer" class="footerstyle">
+    <!--to add the logo-->
+    <a href="#homepage" c class="ui-btn footerbtn"><img class="footerlogo" src="assets/Logo.png"></a>
+    <p>&copy; all rights reserved to LingoJourney</p>
+</footer>
+</section>
+
+<!--To create the about page-->
+<section data-role="page" id="about">
+    <header data-role="header" data-position="fixed">
+        <!--To add the logo-->
+        <div class="logo">
+            <img src="assets/Logo.png" alt="Logo">
+        </div>
+        <a href="#" id="loginbutton" class="ui-btn ui-btn-right">Login</a>
+        <!--To add the navigation menu/bar-->
+        <nav data-role="navbar" class="main-navbar">
+            <ul>
+                <li><a href="#homepage" >Home</a></li>
+                <li><a href="#lingo">Lingo</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="more-toggle">More</a></li>
+            </ul> 
+        </nav>
+        <ul class="more-nav" style="display: none; padding: 10px;" data-role="listview" data-inset="true" data-icon="false">
+            <li><a href="#about" class="ui-btn-active">About</a></li>
+            <li><a href="#seminars" >Seminars</a></li>
+            <li><a href="#reviews" >Reviews</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    </header>
+
+    <main data-role="main" class="ui-content">
+    <h1 class="headingsh1">WHAT MAKES US <br> UNIQUE</h1>
+    <p class="paragraphs"></p>
+    <div class="ui-grid-b ui-responsive" id="aboutcontainer">
+        <!--grid 1-->
+        <div class="ui-block-a" id="aboutblock1">
+            <img src="assets/mission.png" alt="mission" class="abouticon">
+            <h3>OUR MISSION</h3>
+            <p>We aim to break down language barriers by offering inclusive, interactive,
+            and culturally-rich learning experiences for everyone, anywhere in the world.</p>
+        </div>
+        <!--grid 2-->
+        <div class="ui-block-b" id="aboutblock2">
+            <img src="assets/expert.png" alt="experts" class="abouticon">
+            <h3>EXPERT INSTRUCTORS</h3>
+            <p>Each seminar and lesson is guided by certified language 
+            professionals who bring real-world experience and personalized support to every learner.</p>
+        </div>
+        <!--grid 3-->
+        <div class="ui-block-c" id="aboutblock3">
+            <img src="assets/community.png" alt="community" class="abouticon">
+            <h3>GLOBAL COMMUNITY</h3>
+            <p>Join a vibrant community of learners and speakers from around the globe.
+             Share tips, practice live, and grow your confidence through connection.</p>
+        </div>
+    </div>
+    <h1 class="headingsh1">ABOUT <br> LINGOJOURNEY</h1>
+    <p class="paragraphs">At LingoJourney, our mission is to make language learning accessible, enjoyable, and tailored to your lifestyle. Whether you're a busy student, a working professional,
+         or a passionate traveler, our platform offers interactive tools, expert-led seminars, and mobile-friendly lessons designed to help you thrive. We believe that learning a new language opens doors to new cultures, connections,
+         and opportunities, and we're here to guide you every step of the way.</p>
+         <!--images popups-->
+         <!--img 1-->
+         <a href="#imagepop1" data-rel="popup" data-position-to="window">
+            <img src="assets/about1.jpg" alt="about1" style="width: 110px;">
+        </a>        
+        <div data-role="popup" id="imagepop1" data-dismissible="false" data-position-to="window">
+            <a href="#" class="ui-btn ui-btn-b ui-nodisc-icon ui-btn-icon-notext ui-icon-delete ui-btn-right" data-rel="back"> close </a>
+            <img src="assets/about1.jpg" alt="about1" style="max-width: 100%; height: auto;">
+        </div>
+        <!--img 2-->
+        <a href="#imagepop2" data-rel="popup" data-position-to="window">
+            <img src="assets/about2.jpg" alt="about2" style="width: 110px;">
+        </a>        
+        <div data-role="popup" id="imagepop2" data-dismissible="false" data-position-to="window">
+            <a href="#" class="ui-btn ui-btn-b ui-nodisc-icon ui-btn-icon-notext ui-icon-delete ui-btn-right" data-rel="back"> close </a>
+            <img src="assets/about2.jpg" alt="about2" style="max-width: 100%; height: auto;">
+        </div>
+        <!--img 3-->
+        <a href="#imagepop3" data-rel="popup" data-position-to="window">
+            <img src="assets/about3.jpg" alt="about3" style="width: 110px;">
+        </a>        
+        <div data-role="popup" id="imagepop3" data-dismissible="false" data-position-to="window">
+            <a href="#" class="ui-btn ui-btn-b ui-nodisc-icon ui-btn-icon-notext ui-icon-delete ui-btn-right" data-rel="back"> close </a>
+            <img src="assets/about3.jpg" alt="about3" style="max-width: 100%; height: auto;">
+        </div>
+        <!--img 4-->
+        <a href="#imagepop4" data-rel="popup" data-position-to="window">
+            <img src="assets/about4.jpg" alt="about4" style="width: 110px;">
+        </a>        
+        <div data-role="popup" id="imagepop4" data-dismissible="false" data-position-to="window">
+            <a href="#" class="ui-btn ui-btn-b ui-nodisc-icon ui-btn-icon-notext ui-icon-delete ui-btn-right" data-rel="back"> close </a>
+            <img src="assets/about4.jpg" alt="about4" style="max-width: 100%; height: auto;">
+        </div>
+        <!--img 5-->
+        <a href="#imagepop5" data-rel="popup" data-position-to="window">
+            <img src="assets/about5.jpg" alt="about5" style="width: 110px;">
+        </a>        
+        <div data-role="popup" id="imagepop5" data-dismissible="false" data-position-to="window">
+            <a href="#" class="ui-btn ui-btn-b ui-nodisc-icon ui-btn-icon-notext ui-icon-delete ui-btn-right" data-rel="back"> close </a>
+            <img src="assets/about5.jpg" alt="about5" style="max-width: 100%; height: auto;">
+        </div>
+        <!--img 6-->
+        <a href="#imagepop6" data-rel="popup" data-position-to="window">
+            <img src="assets/about6.jpg" alt="about6" style="width: 110px;">
+        </a>        
+        <div data-role="popup" id="imagepop6" data-dismissible="false" data-position-to="window">
+            <a href="#" class="ui-btn ui-btn-b ui-nodisc-icon ui-btn-icon-notext ui-icon-delete ui-btn-right" data-rel="back"> close </a>
+            <img src="assets/about6.jpg" alt="about6" style="max-width: 100%; height: auto;">
+        </div>
+    </main>
+    
+    <footer data-role="footer" class="footerstyle">
+        <!--to add the logo-->
+        <a href="#homepage" c class="ui-btn footerbtn"><img class="footerlogo" src="assets/Logo.png"></a>
+        <p>&copy; all rights reserved to LingoJourney</p>
+    </footer>
+</section>
+
+<!--To create the videos page-->
+<section data-role="page" id="videos">
+    <header data-role="header" data-position="fixed">
+        <!--To add the logo-->
+        <div class="logo">
+            <img src="assets/Logo.png" alt="Logo">
+        </div>
+        <a href="#" id="loginbutton" class="ui-btn ui-btn-right">Login</a>
+        <!--To add the navigation menu/bar-->
+        <nav data-role="navbar" class="main-navbar">
+            <ul>
+                <li><a href="#homepage" >Home</a></li>
+                <li><a href="#lingo">Lingo</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact" >Contact</a></li>
+                <li><a href="#" class="more-toggle">More</a></li>
+            </ul> 
+        </nav>
+        <ul class="more-nav" style="display: none; padding: 10px;" data-role="listview" data-inset="true" data-icon="false">
+            <li><a href="#about">About</a></li>
+            <li><a href="#seminars" >Seminars</a></li>
+            <li><a href="#reviews" >Reviews</a></li>
+            <li><a href="#videos" class="ui-btn-active">Videos</a></li>
+        </ul>
+    </header>
+
+    <main data-role="main" class="ui-content">
+    <h1 class="headingsh1">CHECKOUT OUR <br> FREE COURSES</h1>
+    <p class="paragraphs">Browse our free videos to boost your language skills with easy-to-follow lessons and tips.</p>
+    <!--to add the videos-->
+    <!--korean-->
+    <figure class="video">
+        <iframe 
+          src="https://www.youtube.com/embed/sx0yyQqkpqo" 
+          title="Learn Korean" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <figcaption>Learn essential Korean phrases and writing in this beginner-friendly guide.</figcaption>
+      </figure>
+      <!--spanish-->
+      <figure class="video">
+        <iframe 
+          src="https://www.youtube.com/embed/Fkoansd4Ni0" 
+          title="Learn Spanish" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <figcaption>Explore our beginner Spanish course and start speaking with confidence.</figcaption>
+      </figure>
+      <!--italian-->
+      <figure class="video">
+        <iframe 
+          src="https://www.youtube.com/embed/EG9x0eevbV4?si=TZo7CEu1oiKoghyw" 
+          title="Learn Italian" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <figcaption>Enjoy learning Italian basics, from greetings to everyday expressions.</figcaption>
+      </figure>
+      <!--arabic-->
+      <figure class="video">
+        <iframe 
+          src="https://www.youtube.com/embed/NapGLT3WFX8?si=ootPgkxKgbgASSmw" 
+          title="Learn Arabic" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <figcaption>Discover the fundamentals of Arabic pronunciation and sentence structure.</figcaption>
+      </figure>
+    </main>
+    
+    <footer data-role="footer" class="footerstyle">
+        <!--to add the logo-->
+        <a href="#homepage" c class="ui-btn footerbtn"><img class="footerlogo" src="assets/Logo.png"></a>
+        <p>&copy; all rights reserved to LingoJourney</p>
+    </footer>
+</section>
+
+<!--To create the contact page-->
+<section data-role="page" id="contact">
+    <header data-role="header" data-position="fixed">
+        <!--To add the logo-->
+        <div class="logo">
+            <img src="assets/Logo.png" alt="Logo">
+        </div>
+        <a href="#" id="loginbutton" class="ui-btn ui-btn-right">Login</a>
+        <!--To add the navigation menu/bar-->
+        <nav data-role="navbar" class="main-navbar">
+            <ul>
+                <li><a href="#homepage" >Home</a></li>
+                <li><a href="#lingo">Lingo</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+                <li><a href="#" class="more-toggle">More</a></li>
+            </ul> 
+        </nav>
+        <ul class="more-nav" style="display: none; padding: 10px;" data-role="listview" data-inset="true" data-icon="false">
+            <li><a href="#about">About</a></li>
+            <li><a href="#seminars" >Seminars</a></li>
+            <li><a href="#reviews" >Reviews</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    </header>
+
+    <main data-role="main" class="ui-content">
+    <h1 class="headingsh1">GET IN <br> TOUCH</h1>
+    <p class="paragraphs">We'd love to hear from you. Reach out with any questions or feedback!</p>
+    <!--to add a form-->
+    <form method="post" action="#" data-ajax="false" onsubmit="return validateForm()">
+        <div class="ui-field-contain">
+            <div class="formgroup">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name">
+              <span id="name-error" class="error-msg"></span>
+            </div>
+            <div class="formgroup">
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" placeholder="Please enter your email">
+              <span id="email-error" class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="number">Phone Number:</label>
+              <input type="number" name="number" id="number" placeholder="Please enter your number">
+              <span id="number-error" class="error-msg"></span>
+            </div>
+          <!--flip switch-->
+          <div class="formgroup">
+            <label for="subscribe">Subscribe to our newsletter:</label>
+            <select name="subscribe" id="subscribe" data-role="slider">
+              <option value="no">No</option>
+              <option value="yes" selected>Yes</option>
+            </select>
+          </div>
+          <!--radio buttons-->
+          <div class="formgroup">
+            <fieldset data-role="controlgroup" data-type="horizontal">
+              <legend>Select your gender:</legend>
+              <label class="reglabel" for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male">
+              <label class="reglabel" for="female">Female</label>
+              <input type="radio" name="gender" id="female" value="female">
+            </fieldset>
+          </div>
+          <!--checkboxes-->
+          <div class="formgroup">
+            <fieldset data-role="controlgroup">
+              <legend>Type of inquiry:</legend>
+              <label class="reglabel" for="language">Language Subscription</label>
+              <input type="checkbox" name="languagesub" id="language" value="Language subscription">
+              <label class="reglabel" for="seminar">Seminar Registration</label>
+              <input type="checkbox" name="seminarreg" id="seminar" value="Seminar Register">
+              <label class="reglabel" for="other">Other</label>
+              <input type="checkbox" name="otherinq" id="other" value="other">
+            </fieldset>
+          </div>
+          <!--text area-->
+          <div class="formgroup">
+            <label for="info">Additional Information:</label>
+            <textarea name="addinfo" id="info"></textarea>
+          </div>
+          <!--submit-->
+          <div class="formgroup">
+            <input type="submit" value="Submit" id="submitbtn" data-role="none">
+          </div>
+      
+        </div>
+      </form>
+
+        <!--collapsibleset-->
+        <h1 class="headingsh1">FAQ</h1>
+        <div data-role="collapsibleset">
+            <div data-role="collapsible" data-collapsed="false" class="colla">
+            <h3 class="collah3">What is LingoJourney?</h3>
+            <p>LingoJourney is an interactive language learning platform offering seminars,
+             subscription-based lessons, and global community support to help learners achieve fluency.</p>
+            </div>
+            <div data-role="collapsible" class="colla">
+            <h3 class="collah3">Do I need any prior experience to join?</h3>
+            <p>No, our programs are designed for all levels, from absolute beginners to advanced speakers. 
+            Each level is clearly labeled so you can start where you're comfortable.</p>
+            </div>
+            <div data-role="collapsible" class="colla">
+            <h3 class="collah3">How do I register for a seminar?</h3>
+            <p>You can register through our <a href="#seminars">Seminars</a> page by selecting the city and date of your choice.
+             Simply click "Register" and fill out the prompt.</p>
+            </div>
+            <div data-role="collapsible" class="colla">
+            <h3 class="collah3">Is there a certificate upon completion?</h3>
+            <p>Yes, learners who complete a full course or attend a seminar receive a digital certificate of participation.</p>
+            </div>
+            </div>
+        <!--loaction-->
+        <h1 class="headingsh1">FIND US</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.008701685051!2d50.46812127548804!3d26.163846077101347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49b146223d5fdb%3A0x209d755c800288bc!2sAl%20Liwan!5e0!3m2!1sen!2sbh!4v1747129370480!5m2!1sen!2sbh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    
+    <footer data-role="footer" class="footerstyle">
+        <!--to add the logo-->
+        <a href="#homepage" c class="ui-btn footerbtn"><img class="footerlogo" src="assets/Logo.png"></a>
+        <p>&copy; all rights reserved to LingoJourney</p>
+    </footer>
+</section>
+
+
+<!--To link the JavaScript file-->
+<script src="assets/Javascript.js"></script>
+</body>
+</html>
